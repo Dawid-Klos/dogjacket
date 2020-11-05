@@ -2,7 +2,7 @@
     display: none;
     position: absolute;
     background: $wtf;
-    min-height: 70vh;
+    min-height: 60vh;
     width: 90%;
     z-index: 997;
     top: 120px;
@@ -10,9 +10,9 @@
     align-items: center;
     flex-direction: column;
         &__dog {
-            margin-top: 2px;
             width: 260px;
             z-index: 0;
+            margin-top: 12px;
         }
         &__title {
 
@@ -40,18 +40,20 @@
             align-self: center;
       
             }
+          &__square-buttons {
+            margin-top: 74px;
+          }
           &__square-on {
-            margin-top: 140px;
-            margin-bottom: 20px;
             background: none;
             border: 0;
             outline: 0;
+            margin: 36px;
             }
           &__square-off {
-            margin-bottom: 20px;
             background: none;
             border: 0;
             outline: 0;
+            margin: 36px;
               }
           &__userColor {
             margin-top: 8px;
@@ -61,6 +63,7 @@
             }
           &__userColor--label {
               font-size: 18px;
+              margin-bottom: 8px;
             }
 }
 .front--open {

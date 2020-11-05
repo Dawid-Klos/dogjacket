@@ -14,12 +14,21 @@ console.log('HELLO 🚀')
 // Menu links //
 const nav = document.querySelector(".nav--js");
 const menuFront = document.querySelector('.nav__link--stats');
-const menuSubpage2 = document.querySelector('.nav__link--settings');
+const menuPersonalPhrase = document.querySelector('.nav__link--settings');
 const menuBacktoHome = document.querySelector('.nav__link--home');
 
-// Subpages //
+// Settings //
+const settings = document.querySelector('.settings--js');
+const settingsOpen = document.querySelector('.settings');
+
+// Personal Phrase //
+
+const personalPhrase = document.querySelector('.personalPhrase--js');
+const textInput = document.querySelector('.textInput--js'); 
+const textInputSave = document.querySelector('.textInputSave--js');
+
+// Front  //
 const front = document.querySelector('.front--js');
-const subpage2 = document.querySelector('.subpage2--js');
 const hamburger = document.querySelector(".hamburger--js");
 
 //  Color - Back panels  //
@@ -67,20 +76,6 @@ const frontSquare7 = document.querySelector('.front-square7--js');
 const frontSquare8 = document.querySelector('.front-square8--js');
 const frontSquare9 = document.querySelector('.front-square9--js');
 const frontSquare10 = document.querySelector('.front-square10--js');
-const frontSquare11 = document.querySelector('.front-square11--js');
-const frontSquare12 = document.querySelector('.front-square12--js');
-const frontSquare13 = document.querySelector('.front-square13--js');
-const frontSquare14 = document.querySelector('.front-square14--js');
-const frontSquare15 = document.querySelector('.front-square15--js');
-const frontSquare16 = document.querySelector('.front-square16--js');
-const frontSquare17 = document.querySelector('.front-square17--js');
-const frontSquare18 = document.querySelector('.front-square18--js');
-const frontSquare19 = document.querySelector('.front-square19--js');
-const frontSquare20 = document.querySelector('.front-square20--js');
-const frontSquare21 = document.querySelector('.front-square21--js');
-const frontSquare22 = document.querySelector('.front-square22--js');
-const frontSquare23 = document.querySelector('.front-square23--js');
-const frontSquare24 = document.querySelector('.front-square24--js');
 
 // HAMBURGER MENU //
 
@@ -90,69 +85,95 @@ hamburger.addEventListener('click', function (event) {
 });
 
 
+// Settings //
+
+settings.addEventListener('click', function(event) {
+    settingsOpen.classList.toggle('settings--open');
+    front.classList.remove('front--open');
+    personalPhrase.classList.remove('personalPhrase--open');
+    nav.classList.remove('nav--open');
+    hamburger.classList.remove('is-active');
+});
+
+
 //   HOME  //
 
 // button //
 menuBacktoHome.addEventListener('click', function (event) {
     front.classList.remove('front--open');
-    subpage2.classList.remove('subpage2--open');
+    personalPhrase.classList.remove('personalPhrase--open');
     nav.classList.toggle('nav--open');
     hamburger.classList.toggle('is-active');
+    settingsOpen.classList.remove('settings--open');
 });
 
 
-// Subpage//
+// Front panel//
 
 // button //
 menuFront.addEventListener('click', function (event) {
     front.classList.add('front--open');
-    subpage2.classList.remove('subpage2--open');
+    personalPhrase.classList.remove('personalPhrase--open');
     nav.classList.toggle('nav--open');
     hamburger.classList.toggle('is-active');
+    settingsOpen.classList.remove('settings--open');
 });
 
 
 
-// Subpage 2 //
+// Personal phrase //
 
 // button //
-menuSubpage2.addEventListener('click', function (event) {
-    subpage2.classList.add('subpage2--open');
+menuPersonalPhrase.addEventListener('click', function (event) {
+    personalPhrase.classList.add('personalPhrase--open');
     front.classList.remove('front--open');
     nav.classList.toggle('nav--open');
     hamburger.classList.toggle('is-active');
+    settingsOpen.classList.remove('settings--open');
 });
 
+
+// Changing dog name //
+
+// const personalPhrase = document.querySelector('.personalPhrase--js');
+// const textInput = document.querySelector('.textInput--js'); 
+// text
+
+textInputSave.addEventListener('click', function(event) {
+    textInput.innerHTML = document.getElementById('dogName').value;
+})
 
 // Back panel - Changing color //
 
 squareOn.addEventListener('click', function(event) {
   
+   randomColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
 
-   square1.style.backgroundColor = '#fff';
-   square2.style.backgroundColor = '#fff';
-   square3.style.backgroundColor = '#fff';
-   square4.style.backgroundColor = '#fff';
-   square5.style.backgroundColor = '#fff';
-   square6.style.backgroundColor = '#fff';
-   square7.style.backgroundColor = '#fff';
-   square8.style.backgroundColor = '#fff';
-   square9.style.backgroundColor = '#fff';
-   square10.style.backgroundColor = '#fff';
-   square11.style.backgroundColor = '#fff';
-   square12.style.backgroundColor = '#fff';
-   square13.style.backgroundColor = '#fff';
-   square14.style.backgroundColor = '#fff';
-   square15.style.backgroundColor = '#fff';
-   square16.style.backgroundColor = '#fff';
-   square17.style.backgroundColor = '#fff';
-   square18.style.backgroundColor = '#fff';
-   square19.style.backgroundColor = '#fff';
-   square20.style.backgroundColor = '#fff';
-   square21.style.backgroundColor = '#fff';
-   square22.style.backgroundColor = '#fff';
-   square23.style.backgroundColor = '#fff';
-   square24.style.backgroundColor = '#fff';
+
+   square1.style.backgroundColor = randomColor;
+   square2.style.backgroundColor = randomColor;
+   square3.style.backgroundColor = randomColor;
+   square4.style.backgroundColor = randomColor;
+   square5.style.backgroundColor = randomColor;
+   square6.style.backgroundColor = randomColor;
+   square7.style.backgroundColor = randomColor;
+   square8.style.backgroundColor = randomColor;
+   square9.style.backgroundColor = randomColor;
+   square10.style.backgroundColor = randomColor;
+   square11.style.backgroundColor = randomColor;
+   square12.style.backgroundColor = randomColor;
+   square13.style.backgroundColor = randomColor;
+   square14.style.backgroundColor = randomColor;
+   square15.style.backgroundColor = randomColor;
+   square16.style.backgroundColor = randomColor;
+   square17.style.backgroundColor = randomColor;
+   square18.style.backgroundColor = randomColor;
+   square19.style.backgroundColor = randomColor;
+   square20.style.backgroundColor = randomColor;
+   square21.style.backgroundColor = randomColor;
+   square22.style.backgroundColor = randomColor;
+   square23.style.backgroundColor = randomColor;
+   square24.style.backgroundColor = randomColor;
 
 });
 
@@ -189,19 +210,27 @@ squareOff.addEventListener('click', function(event) {
 
 // Front panel - changing color //
 
+
+let randomColor;
+
+
 frontOn.addEventListener('click', function(event) {
   
 
-  frontSquare1.style.backgroundColor = '#fff';
-  frontSquare2.style.backgroundColor = '#fff';
-  frontSquare3.style.backgroundColor = '#fff';
-  frontSquare4.style.backgroundColor = '#fff';
-  frontSquare5.style.backgroundColor = '#fff';
-  frontSquare6.style.backgroundColor = '#fff';
-  frontSquare7.style.backgroundColor = '#fff';
-  frontSquare8.style.backgroundColor = '#fff';
-  frontSquare9.style.backgroundColor = '#fff';
-  frontSquare10.style.backgroundColor = '#fff';
+    
+  randomColor = '#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
+    
+
+  frontSquare1.style.backgroundColor = randomColor;
+  frontSquare2.style.backgroundColor = randomColor;
+  frontSquare3.style.backgroundColor = randomColor;
+  frontSquare4.style.backgroundColor = randomColor;
+  frontSquare5.style.backgroundColor = randomColor;
+  frontSquare6.style.backgroundColor = randomColor;
+  frontSquare7.style.backgroundColor = randomColor;
+  frontSquare8.style.backgroundColor = randomColor;
+  frontSquare9.style.backgroundColor = randomColor;
+  frontSquare10.style.backgroundColor = randomColor;
 
 
 });
@@ -259,8 +288,9 @@ function startup() {
 
 // FRONT PANEL -  user input - changing color pallette //
 
+
 let userFrontColor;
-let defaultFrontColor = "#ffffff";
+let defaultFrontColor = randomColor;
 
 window.addEventListener("load", startupFront, false);
 
@@ -287,4 +317,3 @@ function startupFront() {
       hamburgerSpan.style.backgroundColor = '#2D2241';
     });
   }
-

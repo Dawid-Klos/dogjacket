@@ -4,16 +4,18 @@
 @import "../scss/hamburgers/hamburgers.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
 @import "../scss/front.scss";
-@import "../scss/subpage2.scss";
+@import "../scss/personalPhrase.scss";
+@import "../scss/settings.scss";
 
 .app {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
+  height: 60vh;
+  margin-top: -84px;
     &__title {
-
+      margin-bottom: 32px;
     }
     &__dog {
       width: 260px;
@@ -41,28 +43,40 @@
       align-self: center;
 
       }
+    &__square-buttons {
+      margin-top: 110px;
+    }
     &__square-on {
-      margin-top: 140px;
-      margin-bottom: 20px;
       background: none;
       border: 0;
       outline: 0;
+      margin: 36px;
       }
     &__square-off {
-      margin-bottom: 20px;
       background: none;
       border: 0;
       outline: 0;
+      margin: 36px;
         }
     &__userColor {
       margin-top: 8px;
       margin-bottom: 12px;
       width: 80vw;
       height: 24px;
+      -webkit-appearance: none;
+      border: 0;
       }
     &__userColor--label {
         font-size: 18px;
+        margin-bottom: 8px;
       }
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
 }
 
 body {
@@ -138,7 +152,7 @@ body {
   display: none;
   border: 2px solid #fff;
   border-radius: 5px;
-  min-height: 60px;
+  min-height: 40px;
     &__link {
       justify-content: center;
       align-content: center;

@@ -1,163 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dog Jacket</title>
-    <meta name="description" content="App for your dog" />
+    <meta name="description" content="App for your dog">
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content>
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta property="og:description" content>
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content>
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
+    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png">
 
     <!-- uncomment the line below to enable PWA  -->
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="manifest.json">
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
+    
+    
+    
+    
 
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
 
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-  </head>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <link rel="apple-touch-icon" sizes="180x180" href="pwa/apple-icon-180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="pwa/apple-icon-167.png">
+<link rel="apple-touch-icon" sizes="152x152" href="pwa/apple-icon-152.png">
+<link rel="apple-touch-icon" sizes="120x120" href="pwa/apple-icon-120.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2048-2732.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2732-2048.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1668-2388.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2388-1668.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1536-2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2048-1536.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1668-2224.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2224-1668.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1620-2160.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2160-1620.png" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1242-2688.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2688-1242.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1125-2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2436-1125.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-828-1792.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1792-828.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1242-2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-2208-1242.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-750-1334.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1334-750.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-640-1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+<link rel="apple-touch-startup-image" href="pwa/apple-splash-1136-640.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+
+</head>
   <body>
 
     <header class="header">
-      <img class="header__img" src="../assets/icons/dog-logo.svg" alt="Dog logo" />
+      <img class="header__img" src="../assets/icons/dog-logo.svg" alt="Dog logo">
       <h1 class="header__title">Dog Jacket</h1>
       <nav class="nav nav--js">
         <button class="nav__link nav__link--home">Back panels</button>
         <button class="nav__link nav__link--stats">Front panels</button>
-        <button class="nav__link nav__link--settings">SUBPAGE2</button>
+        <button class="nav__link nav__link--settings">Personal Phrase</button>
       </nav>
       <button class="hamburger hamburger--js hamburger--slider" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
+      </button>
+      <button class="settings__button settings--js" type="button">
+        <img class="settings__img" src="../assets/icons/settings.svg" alt="Settings picture" />
       </button>
 
     </header>
@@ -165,7 +97,7 @@
     <main class="app">
       <h2 class="app__title">Back panels</h2>
 
-      <img class="app__dog" src="../assets/icons/dog.svg" alt="Dog image" /> 
+      <img class="app__dog" src="../assets/icons/dog.svg" alt="Dog image"> 
       
       <div class="app__squares-pattern">
       
@@ -218,21 +150,24 @@
       <span class="app__square square24--js">
       </span>
     </div>
-    <div>
+    <div class="app__square-buttons">
     <button class="app__square-on square-on--js" type="button">
-      <img src="../assets/icons/on.svg" alt="Power ON button" />
+      <img src="../assets/icons/on.svg" alt="Power ON button">
     </button>
     <button class="app__square-off square-off--js" type="button">
-      <img src="../assets/icons/off.svg" alt="Power ON button" />
+      <img src="../assets/icons/off.svg" alt="Power OFF button">
     </button>
   </div>
     <label class="app__userColor--label" for="userInput">Click below to choose a panel color:</label>
-    <input class="app__userColor" name="userInput" type="color" value="#0000ff" id="userColor" />
+    <input class="app__userColor" name="userInput" type="color" id="userColor">
+    <div class="settings">
+      <h2 class="Settings">Settings</h2>
 
+    </div>
 
     <div class="front  front--js">
       <h2 class="front__title">Front Panels</h2>
-      <img class="front__dog" src="../assets/icons/dog.svg" alt="Dog image" /> 
+      <img class="front__dog" src="../assets/icons/dog.svg" alt="Dog image"> 
       
       <div class="front__squares-pattern">
       
@@ -257,33 +192,38 @@
         <span class="front__square front-square10--js">
         </span>
       </div>
-      <div>
+      <div class="front__square-buttons">
       <button class="front__square-on front-on--js" type="button">
-        <img src="../assets/icons/on.svg" alt="Power ON button" />
+        <img src="../assets/icons/on.svg" alt="Power ON button">
       </button>
 
       <button class="front__square-off front-off--js" type="button">
-        <img src="../assets/icons/off.svg" alt="Power ON button" />
+        <img src="../assets/icons/off.svg" alt="Power ON button">
       </button>
     </div>
 
       <label class="front__userColor--label" for="frontUserInput">Click below to choose a panel color:</label>
-      <input class="front__userColor" name="frontUserInput" type="color" value="#0000ff" id="front__userColor" />
+      <input class="front__userColor" name="frontUserInput" type="color" value="#0000ff" id="front__userColor">
   
 
     </div>
-    <div class="subpage2 subpage2--js">
-      <h2 class="subpage2__title">Personal Phrase</h2>
-      <label for="story">Input text:</label>
-<textarea id="story" name="story"
-          rows="5" cols="33">It was a dark and stormy night...
-</textarea>
+    <div class="personalPhrase personalPhrase--js">
+      <h2 class="personalPhrase__title">Personal Phrase</h2>
+      <img class="personalPhrase__dog" src="../assets/icons/dog.svg" alt="Dog image">
+      <div class="personalPhrase__squares-pattern"></div>
+      <p class="personalPhrase__textInput textInput--js">Dog name</p>
+      <label class="personalPhrase__label" for="dogName">Input text:</label>
+      <textarea class="personalPhrase__textarea" id="dogName" name="dogName" rows="1" cols="30" placeholder="Your dog name..."></textarea>
+      <button class="personalPhrase__button textInputSave--js" type="button">
+        <img src="../assets/icons/save.svg" alt="Save icon" />
+      </button>
     </div>
 
 
       <footer class="footer">
-        <p class="footer__text"><b>DREAM TEAM 1</b><br />All rights reserved &copy;</p>
+        <p class="footer__text"><b>DREAM TEAM 1</b></p>
       </footer>
     </main>
-  </body>
-</html>
+  
+
+</body></html>

@@ -1,0 +1,26 @@
+.settings {
+    display: none;
+    position: absolute;
+    background: $wtf;
+    height: 75vh;
+    width: 90%;
+    z-index: 997;
+    text-align: center;
+    top: 120px;
+    flex-direction: column;
+        &__button {
+            position: fixed;
+            left: 8px;
+            top: 14px;
+            background: none;
+            border: 0;
+            outline: 0;
+        }
+        &__img {
+
+        }
+
+}
+.settings--open {
+    display: flex;
+}
