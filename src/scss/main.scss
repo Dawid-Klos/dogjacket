@@ -3,7 +3,7 @@
 @import "modules/hello.scss";
 @import "../scss/hamburgers/hamburgers.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap');
-@import "../scss/subpage.scss";
+@import "../scss/front.scss";
 @import "../scss/subpage2.scss";
 
 .app {
@@ -12,10 +12,6 @@
   flex-direction: column;
   align-items: center;
   height: 70vh;
-
-    &__text {
-
-    }
     &__title {
 
     }
@@ -45,16 +41,27 @@
       align-self: center;
 
       }
-    &__square-save {
+    &__square-on {
       margin-top: 140px;
       margin-bottom: 20px;
-
+      background: none;
+      border: 0;
+      outline: 0;
       }
+    &__square-off {
+      margin-bottom: 20px;
+      background: none;
+      border: 0;
+      outline: 0;
+        }
     &__userColor {
       margin-top: 8px;
       margin-bottom: 12px;
       width: 80vw;
       height: 24px;
+      }
+    &__userColor--label {
+        font-size: 18px;
       }
 }
 
@@ -75,6 +82,7 @@ body {
   right: 4px;
   top: 8px;
   z-index: 999;
+  background: none;
     &:active {
       outline: none;
       border: none;
@@ -114,14 +122,14 @@ body {
   align-content: center;
   text-align: center;
   z-index: 999;
-  background-color: #fff;
   border-bottom: 1px solid #fff;
     &__img {
+      color: #fff;
 
     }
     &__title {
       margin-top: -14px;
-      color: #000000;
+      color: #fff;
       font-size: 24px;
     }
 }

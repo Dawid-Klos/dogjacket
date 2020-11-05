@@ -150,8 +150,8 @@
       <img class="header__img" src="../assets/icons/dog-logo.svg" alt="Dog logo" />
       <h1 class="header__title">Dog Jacket</h1>
       <nav class="nav nav--js">
-        <button class="nav__link nav__link--home">HOME</button>
-        <button class="nav__link nav__link--stats">SUBPAGE1</button>
+        <button class="nav__link nav__link--home">Back panels</button>
+        <button class="nav__link nav__link--stats">Front panels</button>
         <button class="nav__link nav__link--settings">SUBPAGE2</button>
       </nav>
       <button class="hamburger hamburger--js hamburger--slider" type="button">
@@ -163,8 +163,7 @@
     </header>
 
     <main class="app">
-      <h2 class="app__title">Main page</h2>
-      <p class="app__text">Side panels</p>
+      <h2 class="app__title">Back panels</h2>
 
       <img class="app__dog" src="../assets/icons/dog.svg" alt="Dog image" /> 
       
@@ -219,18 +218,66 @@
       <span class="app__square square24--js">
       </span>
     </div>
+    <div>
+    <button class="app__square-on square-on--js" type="button">
+      <img src="../assets/icons/on.svg" alt="Power ON button" />
+    </button>
+    <button class="app__square-off square-off--js" type="button">
+      <img src="../assets/icons/off.svg" alt="Power ON button" />
+    </button>
+  </div>
+    <label class="app__userColor--label" for="userInput">Click below to choose a panel color:</label>
+    <input class="app__userColor" name="userInput" type="color" value="#0000ff" id="userColor" />
 
-    <button class="app__square-save square-save--js" type="button">Switch on the panel!</button>
-    <label for="userInput">Click below to choose a panel color:</label>
-    <input class="app__userColor" name="userInput" type="color" maxlength="512" id="userColor" />
 
-
-    <div class="subpage  subpage--js">
-      <h2 class="subpage__title">Subpage</h2>
+    <div class="front  front--js">
+      <h2 class="front__title">Front Panels</h2>
+      <img class="front__dog" src="../assets/icons/dog.svg" alt="Dog image" /> 
       
+      <div class="front__squares-pattern">
+      
+        <span class="front__square front-square1--js">
+        </span>
+        <span class="front__square front-square2--js">
+        </span>
+        <span class="front__square front-square3--js">
+        </span>
+        <span class="front__square front-square4--js">
+        </span>
+        <span class="front__square front-square5--js">
+        </span>
+        <span class="front__square front-square6--js">
+        </span>
+        <span class="front__square front-square7--js">
+        </span>
+        <span class="front__square front-square8--js">
+        </span>
+        <span class="front__square front-square9--js">
+        </span>
+        <span class="front__square front-square10--js">
+        </span>
+      </div>
+      <div>
+      <button class="front__square-on front-on--js" type="button">
+        <img src="../assets/icons/on.svg" alt="Power ON button" />
+      </button>
+
+      <button class="front__square-off front-off--js" type="button">
+        <img src="../assets/icons/off.svg" alt="Power ON button" />
+      </button>
+    </div>
+
+      <label class="front__userColor--label" for="frontUserInput">Click below to choose a panel color:</label>
+      <input class="front__userColor" name="frontUserInput" type="color" value="#0000ff" id="front__userColor" />
+  
+
     </div>
     <div class="subpage2 subpage2--js">
-      <h2 class="subpage2__title">Subpage 2</h2>
+      <h2 class="subpage2__title">Personal Phrase</h2>
+      <label for="story">Input text:</label>
+<textarea id="story" name="story"
+          rows="5" cols="33">It was a dark and stormy night...
+</textarea>
     </div>
 
 
