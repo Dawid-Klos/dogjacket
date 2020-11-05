@@ -11,55 +11,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 70vh;
 
     &__text {
 
     }
     &__title {
-      margin-top: -280px;
+
+    }
+    &__dog {
+      width: 260px;
+      z-index: 0;
     }
     &__squares-pattern {
       display: flex;
       width: 100px;
+      background-color: #6b5f5f;
+      border: 1px solid #ffffff;
+      border-radius: 4px;
+      padding: 2px;
       flex-direction: row;
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
+      z-index: 1;
+      margin-top: -170px;
+      margin-left: -42px;
     }
-      &__square {
-        background-color: rgb(255, 176, 176);
-        width: 12px;
-        height: 12px;
-        margin: 2px;
-        align-self: center;
-      }
-      &__square1 {
-        background-color: rgba(255, 176, 176, 0.548);
-        width: 12px;
-        height: 12px;
-        margin: 2px;
-        align-self: center;
-      }
-      &__square2 {
-        background-color: rgba(78, 8, 8, 0.534);
-        width: 12px;
-        height: 12px;
-        margin: 2px;
-        align-self: center;
-      }
-      &__square3 {
-        background-color: rgb(78, 8, 8);
-        width: 12px;
-        height: 12px;
-        margin: 2px;
-        align-self: center;
-      }
-      &__square-save {
-        margin: 12px;
-        align-self: center;
+    &__square {
+      width: 12px;
+      height: 12px;
+      margin: 2px;
+      align-self: center;
 
+      }
+    &__square-save {
+      margin-top: 140px;
+      margin-bottom: 20px;
+
+      }
+    &__userColor {
+      margin-top: 8px;
+      margin-bottom: 12px;
+      width: 80vw;
+      height: 24px;
       }
 }
 
